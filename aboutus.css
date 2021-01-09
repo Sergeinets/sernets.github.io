@@ -1,0 +1,540 @@
+.People {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Team h1 {
+  text-align: center;
+  font-variant: small-caps;
+  font-size: 90px;
+  padding-top: 3%;
+}
+
+.Mission {
+  width: 400px;
+  height: 400px;
+  position: relative;
+}
+
+.Mission {
+  -webkit-filter: grayscale(100%);
+  -moz-webkit-filter: grayscale(100%);
+  -ms-webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.Mission:hover {
+  -webkit-filter: grayscale(0%);
+  -moz-webkit-filter: grayscale(0%);
+  -ms-webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+}
+
+.Mission:hover .Peopleinfo {
+  width: 80%;
+  padding-left: 7%;
+}
+
+.Ryan {
+  background: url(image/team1.jpg) center center no-repeat;
+  background-size: 95%; 
+}
+
+.Jill {
+  background: url(image/team2.jpg) center center no-repeat;
+  background-size: 95%; 
+}
+
+.Sam {
+  background: url(image/team3.jpg) center center no-repeat;
+  background-size: 95%; 
+}
+
+.Mary {
+  background: url(image/team4.jpg) center center no-repeat;
+  background-size: 95%; 
+}
+
+.Peopleinfo {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  bottom: 20%;
+  left: 0;
+  width: 75%;
+  margin-left: 2.5%;
+  padding-left: 3%;
+  padding-top: 10px;
+  border-top-right-radius: 80px;
+}
+
+.Peopleinfo a {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 36px; 
+  color: white;
+  text-decoration: none;
+}
+
+.Peopleinfo p {
+  font-size: 20px;
+  color: #50BA87;
+  margin-top: 0;
+}
+
+.About {
+  height: 400px;
+  margin: 56px 0 0;
+  background-image: url(image/bg-about.jpg);
+  background-position: top;
+  position: relative;
+}
+
+.Choose {
+  display: flex;
+  margin-top: 50px;
+}
+
+.Choosephoto {
+  height: 550px;
+  flex-grow: 1;
+  position: relative;
+}
+.Choosephoto img {
+  width: 70%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+.Choosetext {
+  flex-basis: 100px;
+  flex-grow: 1;  
+  text-align: justify;
+  position: relative;
+}
+
+.Choosetextin {
+  width: 600px;
+  margin: auto;
+  text-align: justify;
+}
+
+.Chooseus {
+  font-variant: small-caps;
+  font-size: 80px;
+  margin: 30px auto 0px; 
+  text-align: center;
+  color: gray;
+}
+
+
+.Table {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas: 
+    'interiorgrafik architecturegrafik spacegrafik'
+    'interior architecture space'
+}
+
+.Persent, .Persentinfo {
+  font-variant: small-caps;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.Persent {
+  height: 170px;
+  width: 170px;
+  font-size: 44px;
+  padding-top: 65px;
+}
+
+.Persentinfo {
+  font-size: 30px;
+}
+
+.Inte {
+  background: url("image/grafik.PNG") no-repeat;
+  background-position: -8px 0;
+  grid-area: interiorgrafik;
+}
+
+.Arch {
+  background: url("image/grafik.PNG") no-repeat;
+  background-position: -210px 0;
+  grid-area: architecturegrafik;
+}
+
+.Spac {
+  background: url("image/grafik.PNG") no-repeat;
+  background-position: -420px 0;
+  grid-area: spacegrafik;
+}
+
+.Integrid {
+  grid-area: interior;
+}
+
+.Archgrid {
+  grid-area: architecture;
+}
+
+.Spacgrid {
+  grid-area: space;
+}
+
+.PointGreen h3 {
+  font-variant: small-caps;
+  font-size: 70px;
+  margin-bottom: 15px; 
+}
+
+.Position h5 {
+  font-variant: small-caps;
+  font-size: 36px;
+  margin: 30px 0px 15px; 
+}
+
+.Position p {
+  font-size: 18px;
+  text-align: justify;
+  width: 360px;
+  margin: 10px 0px 40px; 
+}
+
+label {
+  font-size: 36px;
+  font-variant: small-caps;
+  color: gray;
+  border-bottom: solid #e1e1e1 3px;
+}
+
+label:not(:last-of-type) {
+  margin-right: 12%;
+}
+
+.Tabs label {
+  margin-left: 40px
+}
+
+label:not(:last-of-type) {
+  margin-right: 19%;
+}
+
+.Tabs>input { 
+  display: none; 
+  }
+.Tabs>div {
+  display: none;
+}
+.Tabs>label {
+  cursor: pointer;
+}
+.Tabs>input:checked + label {
+  color: #50BA87;
+  border-bottom: solid #50BA87 3px;
+}
+
+#tab_11:checked ~ #Txt_11, #tab_21:checked ~ #Txt_21, #tab_31:checked ~ #Txt_31 { 
+  display: block; 
+}
+
+.About-us {
+  font-size: 20px;
+  margin: 50px 40px 20px;
+}
+
+.About-us li {
+  color:  #EB6E6E;
+}
+
+.About-us > p {
+  font-size: 22px;  
+  padding-bottom: 10px;
+}
+
+.About-us span {
+  color:  black;
+}
+
+.About-us ul {
+  column-count: 3;
+  list-style-type: disc;
+  letter-spacing: -0.5px;
+  margin-bottom: 50px;
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.Latest-project {
+  position: relative;  
+}
+
+.Latest-project h1 { 
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 90px;
+}
+
+.Late {
+  display: flex;
+  position: relative;
+}
+
+.Latest img {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Latest {
+  height: 300px;
+  font-variant: small-caps;
+  background-position: center;
+  background-size: 140%;
+  font-size: 36px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.Latpro p {
+  font-size: 36px;
+  padding-bottom: 10px;
+}
+
+.Latpro { 
+  width: 30%;
+  margin: 0 2%;
+  height: 450px;
+  border: slateblue 2px;
+  flex-grow: 1;
+  font-variant: small-caps;
+  font-size: 24px;
+  text-align: center;
+  position: relative;
+}
+
+.Latpro:hover p {
+  color:#50BA87;
+}
+
+.Latest:hover {
+  cursor: pointer;
+}
+
+.PointGreen {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #50BA87;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+}
+
+.Timeline {
+  height: 2px;
+  width: 100%;
+  background-color: #e1e1e1;
+  position: absolute;
+  bottom: 83px;
+  left: 0;
+  z-index:-1;  
+}
+
+p.Data {
+  margin-top: 35px;
+  color: #50BA87;
+  font-size: 22px;
+}
+
+.Blocks {
+  margin: auto;
+  width: 760px;
+}
+
+.ModalWindow {
+  display: none;
+  height: 600px;
+  width: 900px;
+  position: fixed;
+  top: 54.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: solid gray 2px;
+  padding: 5px;
+  border-radius: 2px; 
+  background: white;
+  -webkit-box-sizing: content-box; 
+  -moz-webkit-box-sizing: content-box; 
+  -ms-webkit-box-sizing: content-box; 
+  box-sizing: content-box; 
+}
+
+.ModalWindow img {
+  width: 900px;
+}
+
+.ModalWindow button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: white;
+}
+
+
+@media  (max-width: 610px) {
+  label:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  label:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  .Choosetextin {
+    width: 100%;
+  }
+  .About-us ul {
+    column-count: 2;
+  }
+  .Table {
+    grid-template-rows: repeat(3, 4fr 1fr);
+    grid-template-areas: 
+    'interiorgrafik'
+    'interior'
+    'architecturegrafik'
+    'architecture'
+    'spacegrafik'
+    'space'
+  }
+}
+
+@media  (max-width: 420px) {
+ .Tabs label:not(:first-of-type) {
+    margin-left: 10px;
+  }
+  .About-us ul {
+    column-count: 1;
+  }
+}
+
+@media  (max-width: 800px) {
+.Mission {
+  -webkit-filter: grayscale(0%);
+  -moz-webkit-filter: grayscale(0%);
+  -ms-webkit-filter: grayscale(0%);
+  }
+}
+
+@media  (max-width: 930px) {
+  .Late { 
+    flex-direction: column;
+  }
+  .Timeline, .PointGreen  {
+    display: none;
+  }
+  p.Data {
+    margin-top: 0px;
+  }
+  .Latest {
+    height: auto;
+  }
+  .Latpro {
+    height: auto; 
+    width: auto;
+  }
+  .Latest img {
+    position: static; 
+    top: 0%; 
+    left: 0%; 
+    transform: none;
+  }
+  .Choose {
+    flex-direction: column;
+  }
+  .Team h1 { 
+    margin-top: 3%;
+  }  
+}
+
+@media  (max-width: 1230px) {
+  .Choosetext {
+    transform: scale(0.9);
+  }
+  .Team h1 { 
+    margin-top: -3%;
+  }
+}
+
+@media  (max-width: 1000px) {
+  .Team h1 { 
+    margin-top: -10%;
+  }
+}
+
+@media  (max-width: 930px) {
+  .Team h1 { 
+    margin-top: 20px;
+  }
+  .Choosephoto {
+    transform: scale(1); 
+    height: 70vw;
+  }
+  .Choosephoto img {
+    width: 60%;
+  }
+}
+
+@media  (max-width: 300px) {
+  .DownloadBig { 
+    padding: 0;
+  }
+}
+
+@media  (max-width: 230px) {
+  .Team h1 { 
+    margin-top: 0; 
+    font-size: 42px;
+  }
+  .Chooseus { 
+    font-size: 60px; 
+    margin: 0;
+  }
+  .Us { 
+    font-size: 60px;
+   }
+  .Latest-project h1 { 
+    margin-top: 0; 
+    font-size: 42px;
+  }
+  label:not(:last-of-type) { 
+    margin-right: 0px;
+   }
+  .Peopleinfo a { 
+    font-size: 24px;
+  }
+  .DownloadBig { 
+    padding: 0;
+  }
+  .Persent {
+    height: 50%;
+    width: 80%;
+  }
+  .Inte, .Arch, .Spac {
+    background: none;
+  }
+  .Table {
+    grid-template-rows: 2fr 1fr;
+  }
+}

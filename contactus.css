@@ -1,0 +1,188 @@
+
+.Contactcontact {
+  display: flex;
+  margin: 150px auto 0;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+
+.Contacts {
+  border: solid rgb(190, 190, 190) 1px;
+  width: 300px;
+  height: 300px;
+  margin: 10px 6%;
+  position: relative;
+}
+
+.Contacts:first-of-type {
+  margin-left: 7vw;
+}
+
+.Contacts:last-of-type {
+  margin-right: 7vw;
+}
+
+.Contacts:hover {
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+}
+
+.Contacts:hover .Contactsin {
+  font-size: 26px; 
+}
+
+.Contactsin {
+  width: 200px;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  text-align: center;
+}
+
+.Cont {
+  position: absolute;
+  transform: translate(-50%, -15%);
+  background-image: url("image/sprite.png");
+  background-repeat: no-repeat;
+  width: 900px;
+  height: 620px;
+  transform: scale(0.15);
+  top: -70%;
+  left: -100%;
+}
+
+.ContactPhone {
+  background-position: -900px 0px;
+}
+
+.Contacts:hover .Cont {
+  top: -85%;
+}
+
+.ContactAddress {
+  background-position: -0px 0px;
+}
+
+.ContactMail {
+  background-position: 0px -693px;
+}
+
+.ContactSmall {
+  display: none;
+}
+.Touch {
+  margin: 30px 7vw 0;
+}
+
+.Touchinfo {
+  display: flex;  
+  margin: 0;
+  align-items: center;
+}
+
+.Touchinfo h1 {
+  font-variant: small-caps;
+  flex-basis: 310px;
+  margin: 0;
+  font-size: 70px;
+  padding-right: 10px;
+  border-right: solid #e1e1e1 2px;
+  
+}
+
+.Touchtext {
+  font-size: 26px;
+  padding-left: 30px;
+}
+
+.Getintouch {
+  width: 30vw;
+  font-size: 16px;
+  margin: 20px 1vw;
+  padding: 15px;
+  background-color: #eeeeee;
+  border: none;
+}
+
+.Getintouch:first-of-type {
+  margin-left: 0;
+}
+
+.Getintouch:last-of-type {
+  margin-right: 0;
+}
+
+.Getin {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 250px;
+}
+
+.ButtonLast {
+  padding-bottom: 20px;
+}
+
+@media  (max-width: 840px) {
+  .Touchinfo {
+    flex-wrap: wrap;
+  }
+  .Getintouch:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .Getintouch:last-of-type {
+    margin-left: 0;
+    width: 100%
+  }
+  .Touchinfo h1 {
+    border-right: none;
+    flex-basis: auto;
+    margin: auto; 
+  }
+ .Touchtext { 
+   padding-left: 0px; 
+   padding-top: 30px; 
+   border-top: solid #e1e1e1 2px; 
+   text-align: justify;
+  }
+ .Getintouch {
+   width: 44%;
+  }
+}
+
+@media  (max-width: 745px) {
+  .Getintouch:nth-of-type(1), .Getintouch:nth-of-type(2)  {
+    width: 100%;
+  }
+  .Getintouch:nth-of-type(2) {
+    margin-left: 0;
+    }
+  .Getintouch:nth-of-type(1) {
+    margin-right: 0;
+  }
+}
+
+@media  (max-width: 350px) {
+  .Contacts {
+    width: 80%;
+    height: 100px;
+  }
+  .Cont {
+    display: none;
+  }
+  .Contactsin {
+    width: 80%;
+    font-size: 14px;
+  }
+  .ContactSmall {
+    display: block;
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    font-size: 20px;
+  }
+}

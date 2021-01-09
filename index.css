@@ -1,0 +1,537 @@
+.Banner {
+  height: 520px;
+  background-image: url('image/diz4.jpg');
+  background-size: cover;
+  border: solid green 0px;
+  color: white;
+  margin-top: 56px;
+  text-align: center;
+  position: relative;
+}
+
+.Banner p {
+  font-size: 26px;
+}
+
+.Banner h1 {
+  font-size: 110px;
+  font-variant: small-caps;
+}
+
+.Text {
+  width: 70%; 
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.Services { 
+  display: flex;
+  align-items: center;
+  padding: 40px 6% 0 6%;
+  justify-content: space-between;
+}
+
+.ServiceImgLeft {
+  position: relative;
+  border: solid  black 2px;
+}
+
+.ServiceImg {
+  display: block;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  top: 3%;
+  left: 3%;
+}
+
+.ServiceImgLeft:hover .ServiceImg{
+  transform: translate(-8%, -5%);
+}
+
+.ServiceCard > div {
+  display: flex;
+}
+
+.ServiceCard > div .Service:first-child {
+  margin-right: 35px;
+}
+
+.Service {
+  display: inline-table;
+  margin-bottom: 35px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+  width: 228px;
+  height: 210px;
+  padding-top: 36px;
+  padding-left: 5px;
+  padding-right: 5px;
+  position: relative;
+}
+
+.Service a {
+  text-decoration: none;
+  color: black;
+}
+
+.Service svg {
+  display: block;
+  margin: 0 auto;
+}
+
+.Service:hover {
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+}
+
+.Pmain {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+
+.Pmain:hover {
+  letter-spacing: 1px;
+}
+
+.Pmain::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 10%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 34.5px 60px 34.5px;
+  border-color: transparent transparent #72d5a5 transparent;
+  transform: translate3d(-50%, 0, 0) rotate(15deg);
+  transform-origin: 50% 80%;
+  z-index: -1;
+}
+
+@keyframes MyAnimation2
+{
+  from { transform: translate3d(-50%, 0, 0) rotate(15deg); }
+  50% { transform: translate3d(-50%, 0, 0) rotate(0deg); } 
+  to { transform: translate3d(-50%, 0, 0) rotate(15deg); }
+}
+
+.Service:hover .Pmain::before{
+  animation: MyAnimation2 2s infinite;
+}
+
+.Service p {
+  text-align: center;
+}
+
+.ServiceInfo {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.ServiceAll {
+  display: flex;
+  flex-direction: column;
+  font-size: 70px;
+  line-height: 0.6;
+  font-variant: small-caps;
+}
+
+.Exper { 
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 8%;
+}
+
+.Counter {
+  font-size: 500px;
+  font-family: 'Teko', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0px 25px 0 0;
+  background: url(image/text-image.jpg) -200px 55px no-repeat;
+  -webkit-background-clip: text;
+  -moz-webkit-background-clip: text;
+  -ms-webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-webkit-text-fill-color: transparent;
+  -ms-webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+
+.Years {
+  display: flex;
+  align-items: center;
+}
+
+.Years h3 {
+  width: 250px;
+  font-size: 36px;
+  border-left: solid gray 4px; 
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.Years p {
+  color: gray;
+  width: 250px;
+  text-align: justify;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+@keyframes MyAnimation1
+{
+  from { background-position:-200px 55px; }
+  50% { background-position: 0px 55px; } 
+  to { background-position: -200px 55px; }
+}
+
+.Years:hover .Counter {
+  animation: MyAnimation1 10s infinite;
+}
+
+.Numbers {
+  display: grid;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 165px 165px;
+  position: absolute;
+  right: 8%;
+}
+
+.Numbers p:first-child {
+  font-size: 130px;
+  text-align: center;
+}
+
+.Numbers p:last-child {
+  font-variant: small-caps;
+  font-size: 26px;
+  color: gray;
+  text-align: center;
+}
+
+.Numbers div:first-child {
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.Numbers div:last-child {
+  border-left: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  margin-left: -0.5px;
+  margin-top: -0.5px;
+}
+
+.Clients {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+  align-items: center; 
+}
+
+.Clients img {
+  border: solid black 1px;
+}
+
+.Process {
+  display: flex;
+  height: 600px;
+  padding: 0 6%;
+}
+
+.Dream, .Embody {
+  flex-basis: 200px;
+  flex-grow: 1;
+  position: relative;
+}
+
+.Point {
+  width: 80%;
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  transform: translate(-10%, -40%)
+}
+
+.ProcessPhoto {
+  width: 556px;
+  height: 434px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Embody:hover .ProcessPhoto{
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%)
+}
+
+.DecorElement {
+  border: solid black 2px;
+  width: 553px; 
+  height: 434px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-45%, -55%)
+}
+
+.Embody:hover .DecorElement {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.Point h3 {
+  font-variant: small-caps;
+  font-size: 70px;
+  margin-bottom: 15px; 
+}
+
+.Position h5 {
+  font-variant: small-caps;
+  font-size: 36px;
+  margin: 30px 0px 15px; 
+}
+
+.Position p {
+  font-size: 18px;
+  text-align: justify;
+  width: 360px;
+  margin: 10px 0px 40px; 
+}
+
+label {
+  font-size: 36px;
+  font-variant: small-caps;
+  color: gray;
+  border-bottom: solid #e1e1e1 3px;
+}
+
+label:not(:last-of-type) {
+  margin-right: 12%;
+}
+
+.Tabs>input { 
+  display: none; 
+  }
+.Tabs>div {
+  display: none;
+}
+.Tabs>label {
+  cursor: pointer;
+}
+.Tabs>input:checked + label {
+  color: #50BA87;
+  border-bottom: solid #50BA87 3px;
+   
+}
+#tab_1:checked ~ #Txt_1, #tab_2:checked ~ #Txt_2, #tab_3:checked ~ #Txt_3, #tab_4:checked ~ #Txt_4 { 
+  display: block; 
+}  
+
+
+@media (min-width: 930px) and (max-width: 1230px) {
+  .Services, .Exper, .Process {
+    padding: 0 2%;
+  }
+  .ServiceImgLeft, .Years, .Embody {
+    transform: scale(0.9);
+  }
+  .ServiceCard {
+    transform: scale(0.8);
+  }
+  .Counter {
+    padding-right: 0;
+  }
+  .Numbers {
+    transform: scale(0.8); 
+    right: 0;
+  }
+  .Dream {
+    transform: scale(0.8);
+    margin-right: 2%;
+    margin-left: -10px;
+  }
+  .Point {
+    margin-left: 2%;
+  }
+  .Clients {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Clients div {
+    margin-bottom: 50px;
+    transform: scale(1.2);
+  }
+  .Clients div:nth-of-type(odd) {
+    margin-right: 2%;
+  }
+  .Clients div:nth-of-type(even) {
+    margin-left: 2%;
+  }
+  .Buttons { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .Embody {
+    margin-right: 8%;
+  } 
+  .Download { 
+    margin-left: 0px; 
+    margin-top: 10px;
+  }
+}
+
+
+
+@media (max-width: 930px) {
+  .ServiceImgLeft, .ServiceCard, .Counter, .Numbers, .Dream {
+    transform: scale(1);
+  }
+  .Services, .Process {
+    flex-direction: column; 
+  }
+  .Process {
+    height: 950px;
+  }
+  .Exper {
+    flex-direction: column;
+  }
+  .ServiceImgLeft, .ServiceCard { 
+    margin-bottom: 30px;
+  }
+  .Years {
+    transform: scale(0.9);
+  }
+  .Numbers {
+    right: 0; margin: 105px auto;
+  }
+  .Clients { 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .Clients div:nth-of-type(odd) { 
+    margin: auto;
+  }
+  .ClientsLeft {
+    margin-bottom: 20px
+  }
+  .Process {
+    text-align: center; 
+  }
+  .Point {
+    width: 80%;
+  }
+  .Position p {
+    width: 80%; 
+    margin: auto;
+  }
+  .Button {margin: 20px auto 0;
+  }
+  .Numbers {position: relative;
+   margin-top: 0; 
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 630px) {
+  .ServiceImgLeft {
+    margin-bottom: 50px;
+  }
+  .Embody {
+    display: none;
+  }
+  .Position p { 
+    width: auto;
+  }
+  .Clients { 
+    grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .Service:nth-of-type(odd) { 
+    margin-right: 0px;
+  }
+ .Numbers div:first-child {
+    border-right: none;
+    border-bottom: none;
+  }
+  .Numbers div:last-child {
+    border-left: none;
+    border-top: none;
+  }
+  .ServiceCard > div {
+    flex-direction: column;
+  }
+  .Years {
+    flex-direction: column;
+  }
+  .ServiceCard > div .Service:first-child { 
+    margin-right: 0px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Numbers {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .Banner h1 { 
+    font-size: 60px;
+  }
+  .Counter { 
+    padding: 0;
+  }
+  .Clients img {
+    width: 90%; 
+    margin-left: 5%
+  }
+}
+
+@media (max-width: 320px) {
+.Service {
+    display: block;
+    width: 80%;
+    margin-left: auto; 
+    }
+  .Banner h1 { 
+    font-size: 30px;
+  }
+  .Banner p {
+    font-size: 16px;
+  }
+  .Counter {
+    font-size: 200px;
+    padding: 0px; 
+    background: none;
+    -webkit-text-fill-color: black;
+    -moz-webkit-text-fill-color: black;
+    -ms-webkit-text-fill-color: black;
+    text-fill-color: black;
+  }
+  .Years h3 { 
+    width: 80%;
+  }
+  .Years p { 
+    width: 80%;
+  }
+  .ServiceAll {
+    font-size: 44px;
+  }
+  .Pmain { 
+    font-size: 24px;
+  }
+  .ServiceInfo {
+    font-size: 16px;
+  }
+  .Service svg {
+    display: none;
+  }
+}

@@ -1,0 +1,190 @@
+.About {
+  height: 400px;
+  margin: 56px 0 0;
+  background-image: url(image/bg-about.jpg);
+  position: relative;
+}
+
+.Aboutgal {
+  background-image: url(image/bg-elements.jpg);
+}
+
+.Gallery h1{
+  font-variant: small-caps;
+  text-align: center;
+  font-size: 90px;
+}
+
+.Galleryp {
+  width: 750px;
+  font-size: 22px;
+  text-align: justify;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.Image {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 32.5vw 32.5vw 32.5vw;
+  justify-content: center;
+}
+
+.Imagegal {
+  background-size: cover;
+  margin: 2%;
+  position: relative;
+}
+
+.Image1 {
+  background-image: url(image/gallery1.jpg);
+}
+
+.Image2 {
+  background-image: url(image/gallery2.jpg);
+}
+
+.Image3 {
+  background-image: url(image/gallery3.jpg);
+}
+.Image4 {
+  background-image: url(image/gallery4.jpg);
+}
+
+.Image5 {
+  background-image: url(image/gallery5.jpg);
+}
+
+.Image6 {
+  background-image: url(image/gallery6.jpg);
+}
+
+.Image7 {
+  background-image: url(image/gallery7.jpg);
+}
+
+.Image8 {
+  background-image: url(image/gallery8.jpg);
+}
+
+.Imagetext {
+  display: none;
+  text-align: center;
+  font-size: 18px;
+  width: 24vw;
+  height: 24vw;
+  padding: 1vw;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.Imagegal:hover .Imagetext {
+  display: block;
+}
+
+.Imagetext h2 {
+  margin-top:6vw;
+  font-size: 28px;
+}
+
+.Imagetext a {
+  color: #50BA87;
+  text-decoration: none;
+}
+
+.Imagetext a:hover {
+  color: #EB6E6E;
+}
+
+.Harvey {
+  margin-top: 30px;
+}
+
+.Harveyrd {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.Harveyimg {
+  width: 45vw;
+  height: 30vw;
+  margin: 2vw;
+}
+.Harveyrd img {
+  width: 100%;
+}
+
+#Block2 {
+  display: none;
+}
+
+.Blocks .ButtonRead {
+  right: 0;
+}
+
+.Blocks {
+  margin: auto;
+  width: 760px;
+  text-align: end;
+}
+
+@media  (max-width: 800px) {
+  .Galleryp, h1 {
+    width: 96%
+  }
+  .Image {
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 48.5vw 48.5vw 48.5vw 48.5vw;
+  }
+  .Imagetext { 
+    height: 28vw;
+  }
+  .ButtonRead { 
+    right: 2%;
+  }
+  .Blocks { 
+    width: 96%;
+  }
+}
+
+@media  (max-width: 700px) {
+  .Harveyrd { 
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr
+  }
+  .Harveyimg { 
+    width: auto;
+    height: auto;
+  }
+}
+
+@media  (max-width: 550px) {
+  .Image {
+    grid-template-columns: 98% ;
+    grid-template-rows: 98vw 98vw 98vw 98vw 98vw 98vw 98vw 98vw;
+  }
+  .Imagetext {
+    display: block; 
+    width: 40vw; 
+    height: 14vw; 
+    padding: 0; 
+    bottom: -48vw;
+  }
+  .Imagetext p {
+    display: none;
+  }
+}
+
+@media (max-width: 300px) {
+  .Imagetext {
+    display: none;
+  }
+  .Gallery h1 { 
+    font-size: 50px;
+  }
+}

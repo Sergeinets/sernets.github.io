@@ -1,0 +1,584 @@
+body {
+  font-family: 'Teko', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li > a {
+  text-decoration: none;
+  color: black;
+} 
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 62px;
+  border: solid red 0px;
+  font: 25px; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  padding-left: 20px; 
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);  
+}
+
+.Logo {
+  width: 177px; 
+  margin-top: 2px;
+}
+
+.HeaderContainer {
+  display: flex;
+  align-items: center;
+}
+
+.Ulmenu li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 12px;
+  font-size: 24px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.Highlight{
+  border-bottom: solid #EB6E6E 4px;
+}
+
+.Ulmenu > li:hover {
+  border-bottom: solid #EB6E6E 4px;
+}
+
+.SearchContainer {
+  position: relative;
+  margin-right: -20px;
+}
+
+.SearchInput {
+  visibility: hidden;
+  position: absolute;
+  right: 25px;
+  top: 0;
+}
+
+.SearchInput input {
+  width: 600px;
+  height: 42px;
+  margin-right: 16px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5); 
+  border-radius: 30px;
+  border: none;
+  font-size: 22px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none
+}
+
+.SearchIcon {
+  opacity: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.SearchIcon:checked + .SearchLabel + .SearchInput {
+  visibility: visible;
+}
+
+.SearchInput img {
+  transform: scale(0.06);
+  position: absolute;
+  top: -239px;
+  right: -215px;
+}
+
+.SearchLabel::before {
+  width: 15px;
+  height: 1px;
+  content: url(image/zoom.jpg);
+  transform: scale(0.05);
+  position: absolute;
+  right: 20px;
+  top: 8px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.SearchLabel:hover::before {
+  transform: scale(0.06);
+}
+
+.SearchIcon:checked + .SearchLabel::before {
+  width: 15px;
+  height: 1px;
+  content: url(image/close.png);
+  transform: scale(0.15);
+  position: absolute;
+  right: 25px;
+  top: 2px;
+  z-index: 200;
+  cursor: pointer;
+}
+
+.SearchIcon:checked + .SearchLabel:hover::before {
+  transform: scale(0.17);
+}
+
+.BurgerMenuContainer {
+  display: none;
+}
+
+.BurgerMenu {
+  background-color: white;
+  display: none;
+  width: auto;
+  height: 300px;
+  font-size: 36px;
+  line-height: 50px;
+  position: absolute;
+  top: 62px;
+  left: 0;
+}
+
+.BurgerMenu li {
+  padding-left: 20px;
+}
+
+.BurgerMenu li.HighlightBackground {
+  background-color: #50BA87; 
+}
+
+.BurgerMenu .HighlightBackground a {
+  color: white; 
+}
+
+.BurgerMenuIcon {
+  
+  opacity: 0;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 9px;
+  left: 15px;
+}
+
+.MenuLabel::before {
+  display: none;
+  width: 15px;
+  height: 1px;
+  content: url(image/menu2.jpg);
+  transform: scale(0.08);
+  position: absolute;
+  left: 8px;
+  top: 7px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.BurgerMenuIcon:checked + .MenuLabel + .BurgerMenu {
+  display: block;
+}
+
+.Button {
+  font-variant: small-caps;
+  font-weight: bold;
+  text-align: center; 
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 1.5px;
+  padding: 16px 30px 18px;
+  border: solid #EB6E6E 1px;
+  background-color: #EB6E6E;
+  box-sizing: border-box;
+  display: block;
+}
+
+.Button:hover {
+  color: black;
+  background-color: white;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.Button-green {
+  background-color: #50BA87;
+  border: solid #50BA87 1px;
+  padding: 16px 40px 18px;
+  margin-left: 0px;
+}
+
+.Download {
+  color: black;
+  border: solid black 1px;
+  background-color: white;
+  margin-left: 10px;
+}
+
+.DownloadBig {
+  padding: 16px 60px 18px;
+}
+
+.Download:hover {
+  color: #50BA87;
+  border: solid #50BA87 1px;
+}
+
+.Buttons {
+  display: grid;
+  grid-template-columns: 165px 260px;
+}
+
+.ButtonRed {
+  margin: 43px;
+  padding: 5px 20px;
+}
+
+.ButtonRed:hover {
+  color: #EB6E6E;
+  border: solid #EB6E6E 1px;
+}
+
+.ButtonGroup {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+
+
+.Us {
+  font-variant: small-caps;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Us p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.Us a {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(70, 243, 160);
+  text-decoration: none; 
+}
+
+.Us a:hover {
+  color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+.Footer {
+  display: flex;
+  padding-bottom: 16px;
+}
+
+.Address {
+  width: 32%;
+  box-sizing: border-box;
+  margin: 0 10px;
+  background-color: #2C2E31;
+}
+
+.Connect, .Work {
+  width: 50%;
+  height: auto;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  margin: 0 10px;
+  background-color: #2C2E31;
+}
+
+.ConnectWork {
+  display: flex;
+  width: 67%
+}
+
+.Connect, .Work h3 {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 48px;
+  font-variant: small-caps;
+}
+
+.Work h3 {
+  margin: 20px 15px 5px;
+  font-weight: 400;
+  border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+}
+
+.Connect h3 {
+  margin: 20px 15px 5px;
+  font-weight: 400;
+}
+
+.Work ul {
+  display: inline-block;
+  list-style-type: none;
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+
+.Work li {
+  font-size: 28px;
+  font-variant: small-caps;
+  margin: 15px;
+  padding: 10px 0;
+  border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+}
+
+.Workwork a {
+  color: white;
+}
+
+.Workwork a:hover {
+  color: #50BA87;
+  letter-spacing: 2px;
+}
+
+.Question {
+  height: 80%;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.Message {
+  width: 100%;
+  padding: 18px 15px;
+  margin: 8px 0;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: none;
+  -webkit-box-sizing: border-box;
+  -moz-webkit-box-sizing: border-box;
+  -ms-webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.Mess {
+  height: 180px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+  font-family: Arial, Helvetica, sans-serif; 
+  resize: vertical;
+}
+
+.Butt {
+  width: 100%;
+  margin-left: 0!important; 
+}
+
+.Cre {
+  width: 240px;
+  margin: 25px 0 0 15px;
+}
+
+.Add {
+  margin: 15px;
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 20px;
+  text-align: justify;
+}
+
+.Addressinfo {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  align-items: center;
+  margin: 0 15px;
+  border-bottom: solid rgba(255, 255, 255, 0.15) 1px;
+  font-size: 20px;
+  padding: 25px 0;
+}
+
+.Addresslabel {
+  font-variant: small-caps; 
+  color: #50BA87;
+  font-size: 36px;
+}
+
+.LS {
+  color: white;
+  padding-left: 15px;
+}
+
+.Social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Network {
+  display: inline-block;
+  background-image: url("image/sprites2.png");
+  background-repeat: no-repeat;
+  width: 96px;
+  height: 96px;
+  transform: scale(0.5);
+  border-radius: 48px;
+  margin-right: -30px;
+}
+
+.Network:hover {
+  transform: scale(0.7);
+}
+
+.SocialNetworkSmall {
+  transform: scale(0.4);
+  margin-right: -50px;
+}
+
+.SocialNetworkSmall.Instagram {
+  margin-right: 0px;
+}
+
+.SocialNetworkSmall:hover {
+  transform: scale(0.5)
+}
+
+.Facebook {
+  background-position: -4px -100px;
+}
+
+.Twitter {
+  background-position: -102px -100px;
+}
+
+.Instagram {
+  background-position: -300px -100px;
+}
+
+.Google {
+  background-position: -600px -100px;
+}
+
+.Social a {
+  margin-top: 0;
+}
+
+.Burger a:first-of-type {
+  margin-left: -20px;
+}
+
+.Burger a {
+  margin-top: -30px;
+}
+
+.End {
+  text-align: center;
+}
+
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  resize: vertical;
+}
+
+@media  (max-width: 630px) {
+  .Button { margin: 20px auto 0;}
+}
+
+@media (max-width: 690px) {
+  .ConnectWork {
+    display: block;
+  }
+
+  .Connect, .Work {
+    width: auto;
+    height: auto;
+  }
+
+  .Connect {
+    padding-bottom: 10px
+  }
+
+  .Work {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 930px) {
+  .Ulmenu, .SocNet {
+    display: none;
+  }
+  .BurgerMenuContainer {
+    display: block;
+  }
+  .Logo { 
+    position: absolute;
+    left: 70px;
+  }
+  .MenuLabel::before {
+    display: block;
+  }
+  .SearchContainer {
+    margin-right: 20px;
+  }
+  .SearchInput input { 
+    width: 245px; 
+  }
+  .ButtonGroup {
+    margin: 20px auto 0;
+  }
+}
+
+@media (max-width: 1060px) {
+  .Footer {
+    display: block;
+  }
+  .Add {
+    max-width: 600px;
+  }
+  .Address {
+    margin-bottom: 16px;
+    width: auto;
+  }
+  .ConnectWork {
+    width: auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .Logo {
+    display: none;
+  }
+  .Addressinfo { 
+    grid-template-columns: 1fr;
+  }
+  .Cre { 
+    width: 80%;
+  }
+  .LS { 
+    padding-left: 0px; 
+    font-size: 60%;
+  }
+  .Connect h3 {
+    font-size: 70%;
+  }
+  .Us { 
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 270px) {
+  .Button { 
+    font-size: 10px; 
+    padding-left: 7px;
+  }
+}
